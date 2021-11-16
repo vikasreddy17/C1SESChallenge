@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="Footer">
-            <p>Bottom of page</p>
+            <p>Created by Vikas Thoti Reddy for Capitol One Software Engineering Summit</p>
         </div>
     )
 }
