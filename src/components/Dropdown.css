@@ -1,0 +1,7 @@
+.Dropdown {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(7, 7, 151);
+}
