@@ -38,25 +38,24 @@ function Dropdown({ title, items}) {
 
 
   return (
-    <div className="dd-wrapper">
+    <div>
         <div
             tabIndex={0}
-            className="dd-header"
             role="button"
             onKeyPress={() => toggle(!open)}
             onClick={() => toggle(!open)}
         >
-            <div className="dd-header__title">
-                <p className="dd-header__title--bold">{title}</p>
+            <div>
+                <p>{title}</p>
             </div>
-             <div className="dd-header__action">
+             <div>
                 <p>{open ? 'Close' : 'Open'}</p>
             </div>
         </div>
       {open && (
-            <ul className="dd-list">
+            <ul>
                 {items.map(item => (
-                    <li className="dd-list-item" key={item.id}>
+                    <li key={item.id}>
                         <button type="button" onClick={() => handleOnClick(item)}>
                             <h1>{item.name}</h1>
                             <p1 className = "Dropdown">{isItemInSelection(item) && arrayToString(item.parks)}</p1>
