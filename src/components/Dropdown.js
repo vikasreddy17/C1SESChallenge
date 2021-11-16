@@ -28,7 +28,7 @@ function Dropdown({ title, items}) {
     var returnVal = "";
     for (var i=0; i<array.length; i++){
         if (i<array.length-1){
-            returnVal += array[i].fullName + "";
+            returnVal += array[i].fullName + ", ";
         } else {
             returnVal += array[i].fullName;
         }
