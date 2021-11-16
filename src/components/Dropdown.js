@@ -48,7 +48,7 @@ function Dropdown({ title, items}) {
             <div>
                 <p>{title}</p>
             </div>
-             <div>
+            <div>
                 <p>{open ? 'Close' : 'Open'}</p>
             </div>
         </div>
