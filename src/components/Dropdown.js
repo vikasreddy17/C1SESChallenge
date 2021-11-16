@@ -28,7 +28,7 @@ function Dropdown({ title, items}) {
     var returnVal = "";
     for (var i=0; i<array.length; i++){
         if (i<array.length-1){
-            returnVal += array[i].fullName + ", ";
+            returnVal += array[i].fullName + "";
         } else {
             returnVal += array[i].fullName;
         }
@@ -58,8 +58,8 @@ function Dropdown({ title, items}) {
                 {items.map(item => (
                     <li className="dd-list-item" key={item.id}>
                         <button type="button" onClick={() => handleOnClick(item)}>
-                            <span>{item.name}</span>
-                            <span className = "Dropdown">{isItemInSelection(item) && arrayToString(item.parks)}</span>
+                            <h1>{item.name}</h1>
+                            <p1 className = "Dropdown">{isItemInSelection(item) && arrayToString(item.parks)}</p1>
                         </button>
                     </li>
                 ))}
