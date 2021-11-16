@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="Header">
             <h1>National Parks</h1>
-            <p>Explore the our National Parks</p>
+            <p>Explore Activities Offered by our National Parks</p>
         </div>
     )
 }
